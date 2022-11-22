@@ -1,1 +1,0 @@
-Clairified steps to omit S3 if not being used. See page 9 of the user guide 
