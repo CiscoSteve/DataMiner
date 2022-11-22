@@ -1,0 +1,4 @@
+#1. Added Paging to Customers API Calls
+#2. Added Paging to Contracts API Calls
+#3. Fix storing illeagal character, (") the quote symbol, in the customer name
+#4. Resolved issue of overwriting JSON files with identical JSON files when customer has duplicate records for the same contract ID
