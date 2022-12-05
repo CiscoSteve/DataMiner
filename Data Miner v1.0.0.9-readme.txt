@@ -1,0 +1,1 @@
+1. Added assetUniqueId to all of the CSV output for crash risk API endpoints
