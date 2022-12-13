@@ -1,0 +1,2 @@
+1. Cleaned up unused imports
+2. Resolve duplicates in the Contract Details function
