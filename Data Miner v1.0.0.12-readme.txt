@@ -1,0 +1,12 @@
+1. Resolved coding loop when customer has not allowed access to API Data. This affected the reports including : 'Assets', 'Software', 'Hardware', 'FieldNotices', 'ProrityBugs', 'SecurityAdvisories', 'PurchasedLicenses', and 'Licenses'.
+2. Fixed bug in Software Group Suggestion function when outputting to CSV only
+3. Removed token_time_checks in Main Application Control section of the script in favor of fix #4 below.
+4. Added checks for expired tokens prior to every API call to prevent a token expiring when a function last longer then 110 min due to the amount of time needed to collect the data.
+5. Resolved issue with Compliance Suggestions not collecting all records
+6. Resolved issue the Obtained function not collecting all records
+7. Minor status message changes to inform on the progress of the function during execution at debug level 0
+8. Improved Log Messaging to report current state of script.
+9. Added a new check in the pxc_automated_fault_management_affected_assets function to ensure that the 'caseAction' is not Null and if so, replace with a label of "None".
+10. Added a check for the reports including : 'Assets', 'Software', 'Hardware', 'FieldNotices', 'ProrityBugs', 'SecurityAdvisories', 'PurchasedLicenses', and 'Licenses' to skip the collection instead of crashing when API fails to return data after 20 attempts.
+11. Fixed a bug where a "/" was in the customers name and thus added to the filename for the JSON outputs causing the filename to be invalid.
+12. Added check to validate API returns customers 
