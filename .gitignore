@@ -1,4 +1,6 @@
+config.ini
 outputcsv
 outputjson
 temp
 .vs
+*~
