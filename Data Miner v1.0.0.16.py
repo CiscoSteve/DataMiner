@@ -723,7 +723,7 @@ def get_pxc_contracts():
                                   "_Page_" + str(page) +
                                   "_of_" + str(pages) +
                                   ".json", 'w') as json_file:
-                        json.dump(items, json_file)
+                            json.dump(items, json_file)
                         print(f"Saving {json_file.name}")
 
     print("\nExtracting Unique Contract Entries")
@@ -843,7 +843,7 @@ def get_pxc_contractswithcustomers():
                                   "_Page_" + str(page) +
                                   "_of_" + str(pages) +
                                   ".json", 'w') as json_file:
-                        json.dump(items, json_file)
+                            json.dump(items, json_file)
                         print(f"Saving {json_file.name}")
     if debug_level == 1 or debug_level == 2:
         now = datetime.now()
