@@ -1,4 +1,0 @@
-#1. Changed some date veriables from epoch to date as per the changes in the latest PX Cloud API update.
-#2. Discovered and fixed some functions that where not collection all records as expected. 
-#3. Changed the process for some reports to extract the "totalCount value from the metadata section of the json file embedded in the zip file and use this as an indecator if there is valid content in the json file prior to being processed.
-#4. When collecting the embedded ZIP files, apon any failure to download the file (typically due to the report not being ready yet), a re-try is attempted and the number of retries as the timer to wait which is increased by the number of tries.
